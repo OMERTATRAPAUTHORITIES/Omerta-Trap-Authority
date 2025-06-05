@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Omerta Trap Authority - Request Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      padding-top: 50px;
+    }
+    form {
+      width: 350px;
+      padding: 20px;
+      border: 2px solid black;
+      border-radius: 10px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+    button {
+      background-color: black;
+      color: white;
+      border: none;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <form action="https://formspree.io/f/mowwvopp" method="POST">
+    <h2>Request a Piece</h2>
+
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required>
+
+    <label for="item">Select Item:</label>
+    <select name="item" id="item" required>
+      <option value="Tank Top">Tank Top</option>
+      <option value="Red Jacket">Red Jacket</option>
+      <option value="Shirt with Vest">Shirt with Vest</option>
+    </select>
+
+    <label for="message">Message (Optional):</label>
+    <textarea name="message" id="message" rows="4"></textarea>
+
+    <button type="submit">Submit Request</button>
+  </form>
+</body>
+</html>
